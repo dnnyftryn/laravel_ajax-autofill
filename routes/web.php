@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\EmployeesController;
+use App\Http\Controllers\DatePickerController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
 
@@ -28,3 +29,5 @@ Route::get('autocomplete', [SearchController::class, 'autocomplete'])->name('aut
 
 Route::get('/index', [EmployeesController::class, 'index']);
 Route::post('/employees/getEmployees/', [EmployeesController::class, 'getEmployees'])->name('employees.getEmployees');
+
+Route::get('/datepicker', [DatePickerController::class, 'index']);

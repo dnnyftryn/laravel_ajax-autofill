@@ -50,6 +50,8 @@
            // Set selection
            $('#employee_search').val(ui.item.label); // display the selected text
            $('#employeeid').val(ui.item.value); // save selected id to input
+           console.log(ui.item.label);
+           console.log(ui.item.value);
            return false;
         }
       });
